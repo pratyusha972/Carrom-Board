@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Game</title>
+			<style>  
+			body { margin: 0;
+			       background-color : black; }
+			#gameCanvas {
+				background-color: black;
+				width: 800px;
+				height: 800px;
+				margin: auto;
+				align: center;
+			}
+			#scoreboard {
+				text-align: center;
+				font-family: Segoe UI, Helvetica, Ubuntu, sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<div id='gameCanvas'></div>
+		<script src="js/three.min.js"></script>
+		<script src='js/keyboard.js'></script>
+		<script src='js/maingame.js'></script>
+		<div id='scoreboard'>
+			<h1 id='scores'>0-0</h1>
+		</div>		
+	</body>
+</html>
